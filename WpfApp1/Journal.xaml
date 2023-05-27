@@ -1,0 +1,98 @@
+﻿<Window x:Class="WpfApp1.Journal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Journal" Icon="paint/png.png" MinHeight="600" MaxHeight="600" MinWidth="900" MaxWidth="900" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition/>
+            <RowDefinition Height="75"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Background="#D4E6B5" Grid.Row="0">
+            <Button Background="#3caa3c"  Content="Выход" Margin="700,26,30,30" Height="25" Click="Button_Click">
+                
+            </Button>
+        </StackPanel >
+
+        <StackPanel  Grid.Row="1" Margin="0,50,450,0">
+            <!--<ComboBox SelectedIndex="0" Margin="30,30,50,-60" SelectionChanged="ComboBox_SelectionChanged" >
+                <TextBlock Text="Группа: Р - 202" Width="100" Height="20" Margin="0,0,220,0"/>
+            </ComboBox>
+            <ComboBox Margin="30,90,50,-120">
+                <TextBlock Text="Группа: ИКС - 194" Width="100" Height="20" Margin="0,0,220,0"/>
+            </ComboBox>
+            <ComboBox Margin="30,150,50,-180">
+                <TextBlock Text="Группа: ИП - 198" Width="100" Height="20" Margin="0,0,220,0"/>
+            </ComboBox>
+            <ComboBox Margin="30,210,50,-240">
+                <TextBlock Text="Группа: ИП - 205" Width="100" Height="20" Margin="0,0,220,0"/>
+            </ComboBox>
+            <ComboBox Margin="30,270,50,-300">
+                <TextBlock Text="Группа: ИП - 210" Width="100" Height="20" Margin="0,0,220,0"/>
+            </ComboBox>
+            <ComboBox Margin="30,330,50,-360">
+                <TextBlock Text="Группа: ИП - 211" Width="100" Height="20" Margin="0,0,220,0"/>
+            </ComboBox>-->
+
+            <ListView x:Name ="ProductListView" ScrollViewer.HorizontalScrollBarVisibility="Disabled" HorizontalContentAlignment="Center"  MouseDoubleClick="MouseDoubleClick">
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Horizontal"
+                              HorizontalAlignment="Left"/>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+
+
+                        <StackPanel Width="190">
+                            <TextBlock Text="{Binding Surname,StringFormat=Группа: {0}}"
+                  VerticalAlignment="Center"
+                  TextAlignment="Center"
+                  TextWrapping="Wrap"
+                  HorizontalAlignment="Center"
+                  Margin="0"
+                                  FontSize="15"/>
+
+                            <TextBlock Text="{Binding Name,StringFormat=Имя: {0}}"
+                  VerticalAlignment="Center"
+                  TextAlignment="Center"
+                  TextWrapping="Wrap"
+                  HorizontalAlignment="Center"
+                  Margin="0"
+                                  FontSize="15"/>
+
+                            <TextBlock Text="{Binding Patronymic,StringFormat=Отчество: {0}}"
+                  VerticalAlignment="Center"
+                  TextAlignment="Center"
+                  TextWrapping="Wrap"
+                  HorizontalAlignment="Center"
+                  Margin="0"
+                                  FontSize="15"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Margin="500,50,0,250">
+            <Button Background="#3caa3c" Margin="0,30,200,0" Click="Button_Click_1">
+                <TextBlock Text="Добавить Группу"/>
+            </Button>
+            <Button Background="#3caa3c" Margin="0,30,200,0" Click="Button_Click_2">
+                <TextBlock Text="Удалить Группу"/>
+            </Button>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Background="#D4E6B5">
+        </StackPanel>
+    </Grid>
+</Window>

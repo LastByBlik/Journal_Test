@@ -1,0 +1,87 @@
+﻿<Window x:Class="WpfApp1.AddStudentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+       Title="AddStudent" Icon="paint/png.png" Height="400" Width="400">
+    <Grid Background="#D4E6B5">
+        <StackPanel Background="#D4E6B5" Orientation="Horizontal"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+
+            <StackPanel Background="#D4E6B5" VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Margin="10">
+
+
+
+                <StackPanel Background="#D4E6B5">
+                    <TextBlock Margin="1" Height="20" Width="100" Text="Фамилия"/>
+                    <TextBox Name="nameBox"
+                             Margin="1"
+                             Height="20"
+                             Text="{Binding SurnameClient}" TextChanged="nameBox_TextChanged"/>
+                </StackPanel>
+
+                <StackPanel Background="#D4E6B5">
+                    <TextBlock Margin="1" Height="20" Width="100" Text="Имя"/>
+                    <TextBox Name="surnameBox"
+                             Margin="1"
+                             Height="20"
+                             Text="{Binding NameClient}"/>
+                </StackPanel>
+
+                <StackPanel Background="#D4E6B5">
+                    <TextBlock Margin="1" Height="20" Width="100" Text="Отчество"/>
+                    <TextBox Name="PatronymicBox"
+                             Margin="1"
+                             Height="20"
+                             Text="{Binding FinalPrice}"/>
+                </StackPanel>
+                <StackPanel Background="#D4E6B5">
+                    <TextBlock Margin="1" Height="20" Width="100" Text="Оценка"/>
+                    <TextBox Name="EvaluationBox"
+                             Margin="1"
+                             Height="20"
+                             Text="{Binding EvaluationPrice}"/>
+                </StackPanel>
+                <StackPanel Background="#D4E6B5">
+                    <TextBlock Margin="1" Height="20" Width="100" Text="Группа"/>
+                    <TextBox Name="gruppaBox"
+                             Margin="1"
+                             Height="20"
+                             Text="{Binding gruppaPrice}"/>
+                </StackPanel>
+                <StackPanel Background="#D4E6B5">
+                    <TextBlock Margin="1" Height="20" Width="100" Text="Зачет/Не зачет"/>
+                    <TextBox Name="offsetnotoffsetBox"
+                             Margin="1"
+                             Height="20"
+                             Text="{Binding offsetnotoffsetPrice}"/>
+                </StackPanel>
+                <StackPanel Background="#D4E6B5">
+                    <TextBlock Margin="1" Height="20" Width="100" Text="Дата" />
+                    <TextBox Name="DataBox"
+                             Margin="1"
+                             Height="20"
+                             Text="{Binding DataPrice}"/>
+                </StackPanel>
+                <StackPanel Background="#D4E6B5">
+                    <TextBlock></TextBlock>
+                    <Button Background="#3caa3c" Height="20"
+                            Content="Сохранить" Click="Button_Click_1"/>
+                    
+                </StackPanel>
+                <StackPanel>
+                    <Button Background="#3caa3c" Margin="0,10,0,0" Height="20"
+                            Content="Назад" Click="Button_Click"/>
+                </StackPanel>
+            </StackPanel>
+
+
+
+        </StackPanel>
+    </Grid>
+</Window>
