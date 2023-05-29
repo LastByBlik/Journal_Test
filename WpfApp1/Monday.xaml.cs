@@ -11,17 +11,26 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfApp1.Models;
 
 namespace WpfApp1
 {
     /// <summary>
-    /// Логика взаимодействия для Сouples.xaml
+    /// Логика взаимодействия для Monday.xaml
     /// </summary>
-    public partial class Сouples : Window
+    public partial class Monday : Window
     {
-        public Сouples()
+        public Monday()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            using (JournalContext db = new JournalContext())
+            {
+                Journal.ItemsSource = db.Gruppas.ToList();
+            }
         }
     }
 }
