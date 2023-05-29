@@ -28,5 +28,10 @@ namespace WpfApp1
                 Journal.ItemsSource = db.JournalEvaluations.ToList();
             }
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

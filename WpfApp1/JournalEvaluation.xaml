@@ -40,7 +40,7 @@
                 </StackPanel>
 
 
-                <StackPanel Margin="1" Grid.Column="3" VerticalAlignment="Center"
+                <StackPanel Margin="0,0,-410,0" Grid.Column="3" VerticalAlignment="Center"
                         HorizontalAlignment="Center">
                     <TextBlock Margin="0" Text="Поиск" Height="20" Width="50"/>
                     <TextBox Margin="10" Name="searchBox" Width="100" Height="20"/>
@@ -48,14 +48,14 @@
                 </StackPanel>
 
 
-                <StackPanel Margin="1"
+                <StackPanel Margin="0,0,-410,0"
                         VerticalAlignment="Center"
                         HorizontalAlignment="Center"
                         Grid.Column="1">
                 </StackPanel>
 
 
-                <StackPanel Margin="1"
+                <StackPanel Margin="0,0,-410,0"
                             VerticalAlignment="Center"
                             HorizontalAlignment="Center"
                             Grid.Column="2">
@@ -70,7 +70,19 @@
                              
                 </StackPanel>
 
-
+                <StackPanel Grid.Column="3" Grid.Row="0">
+ 
+                    <Button Background="#3caa3c"  Content="1 Пара" Margin="10,90,880,30" Height="25">
+                    </Button>
+                    <Button Background="#3caa3c"  Content="2 Пара" Margin="110,-55,780,30" Height="25" Click="Button_Click">
+                    </Button>
+                    <Button Background="#3caa3c"  Content="3 Пара" Margin="210,-55,680,30" Height="25">
+                    </Button>
+                    <Button Background="#3caa3c"  Content="4 Пара" Margin="310,-55,580,30" Height="25">
+                    </Button>
+                    <Button Background="#3caa3c"  Content="5 Пара" Margin="410,-55,480,30" Height="25">
+                    </Button>
+                </StackPanel >
 
             </Grid>
 

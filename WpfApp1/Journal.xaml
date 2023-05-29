@@ -13,9 +13,22 @@
             <RowDefinition Height="75"/>
         </Grid.RowDefinitions>
 
+        <StackPanel Grid.Row="0" Background="#D4E6B5" Margin="0,0,390,10">
+            <TextBlock Text="22" Margin="15"/>
+        </StackPanel>
         <StackPanel Background="#D4E6B5" Grid.Row="0">
+            
             <Button Background="#3caa3c"  Content="Выход" Margin="700,26,30,30" Height="25" Click="Button_Click">
-                
+            </Button>
+            <Button Background="#3caa3c"  Content="Понедельник" Margin="10,-35,800,30" Height="25" Click="Button_Click_3">
+            </Button>
+            <Button Background="#3caa3c"  Content="Вторник" Margin="110,-55,700,30" Height="25">
+            </Button>
+            <Button Background="#3caa3c"  Content="Среда" Margin="210,-55,600,30" Height="25">
+            </Button>
+            <Button Background="#3caa3c"  Content="Четверг" Margin="310,-55,500,30" Height="25">
+            </Button>
+            <Button Background="#3caa3c"  Content="Пятница" Margin="410,-55,400,30" Height="25">
             </Button>
         </StackPanel >
 
@@ -83,16 +96,11 @@
 
         </StackPanel>
 
-        <StackPanel Grid.Row="1" Margin="500,50,0,250">
-            <Button Background="#3caa3c" Margin="0,30,200,0" Click="Button_Click_1">
-                <TextBlock Text="Добавить Группу"/>
-            </Button>
-            <Button Background="#3caa3c" Margin="0,30,200,0" Click="Button_Click_2">
-                <TextBlock Text="Удалить Группу"/>
-            </Button>
-        </StackPanel>
-
         <StackPanel Grid.Row="2" Background="#D4E6B5">
+            <Button Background="#3caa3c" Content="Добавить группу" Margin="5" Width="150" Click="Button_Click_1">
+            </Button>
+            <Button Background="#3caa3c" Content="Удалить Группу"  Margin="5" Width="150" Click="Button_Click_2">
+            </Button>
         </StackPanel>
     </Grid>
 </Window>

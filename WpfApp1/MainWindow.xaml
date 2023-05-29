@@ -75,9 +75,17 @@
 
             <Grid Grid.Row="1">
                 <StackPanel>
-                    <Grid>
-                        <DataGrid Grid.Row="1" x:Name="Journal" AutoGenerateColumns="True" IsReadOnly="True" MouseDoubleClick="Journal_MouseDoubleClick"/>
-                    </Grid>
+                    <DataGrid Grid.Row="1" ScrollViewer.HorizontalScrollBarVisibility="Visible" AutoGenerateColumns="False" x:Name="Journal" IsReadOnly="True" MouseDoubleClick="Journal_MouseDoubleClick">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Имя" Width="0.3*" Binding="{Binding Surname}"/>
+                            <DataGridTextColumn Header="Фамилия" Width="0.3*" Binding="{Binding Name}"/>
+                            <DataGridTextColumn Header="Отчество" Width="0.3*" Binding="{Binding Patronymic}"/>
+                            <DataGridTextColumn Header="Оценка" Width="0.3*" Binding="{Binding Evaluation }"/>
+                            <DataGridTextColumn Header="Зачёт" Width="0.3*" Binding="{Binding OffsetNotOffset}"/>
+                            <DataGridTextColumn Header="Дата" Width="0.3*" Binding="{Binding Data}"/>
+                            <DataGridTextColumn Header="Номер пары" Width="*" Binding="{Binding Namberlesson}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
                 </StackPanel>
             </Grid>
             

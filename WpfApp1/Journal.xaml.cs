@@ -76,5 +76,11 @@ namespace WpfApp1
             //    }
             //}
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            new JournalEvaluation().Show();
+            this.Close();
+        }
     }
 }
