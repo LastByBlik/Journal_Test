@@ -13,7 +13,7 @@ public partial class P202
 
     public string? Patronymic { get; set; }
 
-    public int? Evaluation { get; set; }
+    public string? Evaluation { get; set; }
 
     public string? Gruppa { get; set; }
 }

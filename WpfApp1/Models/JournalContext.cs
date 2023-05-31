@@ -52,7 +52,7 @@ public partial class JournalContext : DbContext
 
         modelBuilder.Entity<C189>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Table__3214EC07B718EA76");
+            entity.HasKey(e => e.Id).HasName("PK__tmp_ms_x__3214EC07A7F13944");
 
             entity.ToTable("C-189");
 
@@ -70,19 +70,19 @@ public partial class JournalContext : DbContext
 
         modelBuilder.Entity<Gruppa>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__tmp_ms_x__3214EC073748E8F3");
+            entity.HasKey(e => e.Id).HasName("PK__tmp_ms_x__3214EC07A36FB69F");
 
             entity.ToTable("Gruppa");
 
             entity.Property(e => e.Data).HasColumnName("data");
             entity.Property(e => e.Gruppa1).HasColumnName("gruppa");
-            entity.Property(e => e.Namberlesson).HasColumnName("namberlesson");
+            entity.Property(e => e.Numberlesson).HasColumnName("numberlesson");
             entity.Property(e => e.OffsetNotOffset).HasColumnName("offset/not offset");
         });
 
         modelBuilder.Entity<Ip192>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Table__3214EC07D0DED916");
+            entity.HasKey(e => e.Id).HasName("PK__tmp_ms_x__3214EC077FA0D897");
 
             entity.ToTable("IP-192");
 
@@ -91,7 +91,7 @@ public partial class JournalContext : DbContext
 
         modelBuilder.Entity<Ip193>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__IP-193__3214EC07AAC5C290");
+            entity.HasKey(e => e.Id).HasName("PK__tmp_ms_x__3214EC07809475DC");
 
             entity.ToTable("IP-193");
 
@@ -100,7 +100,7 @@ public partial class JournalContext : DbContext
 
         modelBuilder.Entity<Ip195>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__IP-195__3214EC076D38CCC1");
+            entity.HasKey(e => e.Id).HasName("PK__tmp_ms_x__3214EC07EA904355");
 
             entity.ToTable("IP-195");
 
@@ -118,7 +118,7 @@ public partial class JournalContext : DbContext
 
         modelBuilder.Entity<P202>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__Table__3214EC075B1F1595");
+            entity.HasKey(e => e.Id).HasName("PK__tmp_ms_x__3214EC07F87613BD");
 
             entity.ToTable("P-202");
 

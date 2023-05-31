@@ -13,7 +13,7 @@ public partial class Gruppa
 
     public string? Patronymic { get; set; }
 
-    public int? Evaluation { get; set; }
+    public string? Evaluation { get; set; }
 
     public string? Gruppa1 { get; set; }
 
@@ -21,5 +21,5 @@ public partial class Gruppa
 
     public string? Data { get; set; }
 
-    public int? Namberlesson { get; set; }
+    public string? Numberlesson { get; set; }
 }
